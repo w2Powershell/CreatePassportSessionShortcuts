@@ -7,6 +7,7 @@ del "C:\Users\Public\Desktop\SLSS - Com Additional.lnk"
 del "C:\Users\Public\Desktop\SLSS - Commercial.lnk"
 
 $files = Get-ChildItem "\\softwareShare\files\software\passport\sessions"
+            #scrubbed domain ^
 
 foreach ($file in $files) {
 $newName = [io.path]::GetFileNameWithoutExtension($file)
